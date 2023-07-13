@@ -1,0 +1,126 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.021348758244061634 -0.4765958554231946 -0.8788632550714985 0.10198095753634215
+  position -2.1304181051149502 0.12610748325251206 0.8084194902380208
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+DEF BOX Transform {
+  translation 0 0 0.26
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.137255 0.627451
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.3 0.4
+      }
+    }
+  ]
+}
+DEF CONE Transform {
+  translation 0 0.86 0.27
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.976471 1 0.752941
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.3
+        height 0.5
+        subdivision 36
+      }
+    }
+  ]
+}
+DEF SPHERE Transform {
+  translation 0 0 0.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.54902 0.745098 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 4
+      }
+    }
+  ]
+}
+DEF PLANE Transform {
+  translation 0 -0.61 0.36
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.3
+        metalness 0
+      }
+      geometry Plane {
+        size 0.6 0.6
+      }
+    }
+  ]
+}
+DEF CYLINDER Transform {
+  translation -0.179998 0.03 1.06
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.984314 1 0.109804
+        roughness 0.3
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.3
+        radius 0.1
+      }
+    }
+  ]
+}
+DEF CYLINDER Transform {
+  translation -0.189998 0.03 1.06
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 0.3
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.3
+        radius 0.04
+      }
+    }
+  ]
+}
+DEF CAPSULE Transform {
+  translation 0 0 0.94
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.101961 1 0.176471
+        roughness 0.3
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.5
+        radius 0.3
+      }
+    }
+  ]
+}
